@@ -1,0 +1,73 @@
+/* ===========================
+   1. VARIÁVEIS GLOBAIS (:root)
+   Sempre no topo, antes de tudo
+   =========================== */
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+/* ===========================
+   2. TEMAS (claro e escuro)
+   =========================== */
+.light-theme {
+    --bg:           var(--green);
+    --fontColor:    var(--black);
+    --btnBgColor:   var(--black);
+    --btnFontColor: var(--green);
+}
+
+.dark-theme {
+    --bg:           var(--black);
+    --fontColor:    var(--green);
+    --btnBgColor:   var(--green);
+    --btnFontColor: var(--black);
+}
+
+/* ===========================
+   3. ESTILOS GLOBAIS
+   =========================== */
+* {
+    color: var(--fontColor);
+    font-family: helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+/* ===========================
+   4. LISTA
+   =========================== */
+ul {
+    font-family: helvetica, sans-serif;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+/* ===========================
+   5. BOTÃO DE TEMA
+   =========================== */
+.btg {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: var(--btnFontColor);
+    background-color: var(--btnBgColor);
+}
+
+.btg:focus {
+    outline: none;
+}
